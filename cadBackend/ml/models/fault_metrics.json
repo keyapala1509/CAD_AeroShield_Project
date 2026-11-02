@@ -1,0 +1,89 @@
+{
+  "accuracy": 0.9881147540983607,
+  "feature_names": [
+    "temp_mean",
+    "temp_std",
+    "temp_slope",
+    "vib_mean",
+    "vib_std",
+    "vib_slope",
+    "power_mean",
+    "gust_mean",
+    "battery_gap_mean"
+  ],
+  "labels": [
+    "healthy",
+    "weak_battery",
+    "motor_overheat",
+    "vibration"
+  ],
+  "confusion_matrix": [
+    [
+      3048,
+      17,
+      37,
+      1
+    ],
+    [
+      0,
+      688,
+      0,
+      0
+    ],
+    [
+      3,
+      0,
+      615,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      471
+    ]
+  ],
+  "train_windows": 18392,
+  "test_windows": 4880,
+  "train_flights": 759,
+  "test_flights": 198,
+  "classification_report": {
+    "healthy": {
+      "precision": 0.9990167158308751,
+      "recall": 0.9822752175314212,
+      "f1-score": 0.9905752356191095,
+      "support": 3103.0
+    },
+    "weak_battery": {
+      "precision": 0.975886524822695,
+      "recall": 1.0,
+      "f1-score": 0.9877961234745154,
+      "support": 688.0
+    },
+    "motor_overheat": {
+      "precision": 0.9432515337423313,
+      "recall": 0.9951456310679612,
+      "f1-score": 0.968503937007874,
+      "support": 618.0
+    },
+    "vibration": {
+      "precision": 0.9978813559322034,
+      "recall": 1.0,
+      "f1-score": 0.9989395546129375,
+      "support": 471.0
+    },
+    "accuracy": 0.9881147540983607,
+    "macro avg": {
+      "precision": 0.9790090325820262,
+      "recall": 0.9943552121498456,
+      "f1-score": 0.986453712678609,
+      "support": 4880.0
+    },
+    "weighted avg": {
+      "precision": 0.9885840911471411,
+      "recall": 0.9881147540983607,
+      "f1-score": 0.9881956254856811,
+      "support": 4880.0
+    }
+  }
+}

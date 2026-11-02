@@ -1,0 +1,6 @@
+{
+  "name": "AeroShield",
+  "description": "Tactical autonomous drone command & control frontend in React with real-time WebSocket telemetry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
